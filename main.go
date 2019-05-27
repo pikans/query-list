@@ -10,7 +10,7 @@ func main() {
 	if len(os.Args) < 2 {
 		log.Printf("Usage: %s [list to query]\n", os.Args[0])
 	}
-	s, err := moira.GetMoiraNFSGroupMembers("pika-private")
+	s, err := moira.GetMoiraNFSGroupMembers(os.Args[1])
 	if err != nil {
 		log.Print(err)
 	} else {
