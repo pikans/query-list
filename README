@@ -1,3 +1,8 @@
 This is a helper program for SHITS signup order assignments. It just
-queries Moira for all the current members of pika-private and prints
-out the list separated by newlines.
+queries Moira for all the current members of whatever list you give
+it, and prints out the list separated by newlines.
+
+IMPORTANT - this only works if the list is an NFS group. To make a
+list an NFS group, run
+
+blanche -nfs [the name of the list]
